@@ -1,0 +1,170 @@
+\hypertarget{classAction}{\section{Action Class Reference}
+\label{classAction}\index{Action@{Action}}
+}
+
+
+\hyperlink{classAction}{Action} class.  
+
+
+
+
+{\ttfamily \#include $<$rl-\/lib\-\_\-state.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classAction_a4f457ccfc8336b565cadca56b36e0271}{Action} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\hypertarget{classAction_a4e058e0238731bf8e3368ce213b70fcf}{\hyperlink{classAction_a4e058e0238731bf8e3368ce213b70fcf}{Action} (\hyperlink{classConfiguration}{Configuration} $\ast$a)}\label{classAction_a4e058e0238731bf8e3368ce213b70fcf}
+
+\begin{DoxyCompactList}\small\item\em Constructor for a given configuration. \end{DoxyCompactList}\item 
+void \hyperlink{classAction_a23899eb8bebdca42593c247cabfaec81}{update\-Reward} (float r)
+\begin{DoxyCompactList}\small\item\em Updates the reward through an average. \end{DoxyCompactList}\item 
+void \hyperlink{classAction_a62c0e418aeb551df53a81d865b945274}{set\-Reward} (float r)
+\begin{DoxyCompactList}\small\item\em Sets the reward value directly. \end{DoxyCompactList}\item 
+float \hyperlink{classAction_a55e478501297fabc56274c5a71fa84a4}{get\-Reward} ()
+\begin{DoxyCompactList}\small\item\em Returns the current reward. \end{DoxyCompactList}\item 
+void \hyperlink{classAction_adc70d557ee3bd8653cbdb06dc16532c2}{set\-Config} (\hyperlink{classConfiguration}{Configuration} $\ast$a)
+\begin{DoxyCompactList}\small\item\em Change the action. \end{DoxyCompactList}\item 
+\hyperlink{classConfiguration}{Configuration} $\ast$ \hyperlink{classAction_ad2a8ab7fdc13f86ef84efe4435b32e61}{get\-Config} ()
+\begin{DoxyCompactList}\small\item\em Get the action. \end{DoxyCompactList}\item 
+void \hyperlink{classAction_a357c36b42542755e9b2752412080b4dd}{set\-Next\-State} (\hyperlink{classState}{State} $\ast$s)
+\begin{DoxyCompactList}\small\item\em Set next state. \end{DoxyCompactList}\item 
+\hyperlink{classState}{State} $\ast$ \hyperlink{classAction_a3b1290eec402e84aef5d823f4ac7b128}{get\-Next\-State} ()
+\begin{DoxyCompactList}\small\item\em Get next state. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classAction}{Action} class. 
+
+This class is for creating actions that can be used with different Reinforcement Learning Algorithms. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classAction_a4f457ccfc8336b565cadca56b36e0271}{\index{Action@{Action}!Action@{Action}}
+\index{Action@{Action}!Action@{Action}}
+\subsubsection[{Action}]{\setlength{\rightskip}{0pt plus 5cm}Action\-::\-Action (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classAction_a4f457ccfc8336b565cadca56b36e0271}
+
+
+Default constructor. 
+
+$\ast$$\ast$$\ast$ \hyperlink{classAction}{Action} Class $\ast$$\ast$$\ast$/// 
+
+\subsection{Member Function Documentation}
+\hypertarget{classAction_ad2a8ab7fdc13f86ef84efe4435b32e61}{\index{Action@{Action}!get\-Config@{get\-Config}}
+\index{get\-Config@{get\-Config}!Action@{Action}}
+\subsubsection[{get\-Config}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Configuration} $\ast$ Action\-::get\-Config (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classAction_ad2a8ab7fdc13f86ef84efe4435b32e61}
+
+
+Get the action. 
+
+\begin{DoxyReturn}{Returns}
+The action to do in the configuration space.. 
+\end{DoxyReturn}
+\hypertarget{classAction_a3b1290eec402e84aef5d823f4ac7b128}{\index{Action@{Action}!get\-Next\-State@{get\-Next\-State}}
+\index{get\-Next\-State@{get\-Next\-State}!Action@{Action}}
+\subsubsection[{get\-Next\-State}]{\setlength{\rightskip}{0pt plus 5cm}{\bf State}$\ast$ Action\-::get\-Next\-State (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classAction_a3b1290eec402e84aef5d823f4ac7b128}
+
+
+Get next state. 
+
+\begin{DoxyReturn}{Returns}
+Pointer to the state reached for doing this action (from the parent state). 
+\end{DoxyReturn}
+\hypertarget{classAction_a55e478501297fabc56274c5a71fa84a4}{\index{Action@{Action}!get\-Reward@{get\-Reward}}
+\index{get\-Reward@{get\-Reward}!Action@{Action}}
+\subsubsection[{get\-Reward}]{\setlength{\rightskip}{0pt plus 5cm}float Action\-::get\-Reward (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classAction_a55e478501297fabc56274c5a71fa84a4}
+
+
+Returns the current reward. 
+
+\begin{DoxyReturn}{Returns}
+The value of the current reward for that action. 
+\end{DoxyReturn}
+\hypertarget{classAction_adc70d557ee3bd8653cbdb06dc16532c2}{\index{Action@{Action}!set\-Config@{set\-Config}}
+\index{set\-Config@{set\-Config}!Action@{Action}}
+\subsubsection[{set\-Config}]{\setlength{\rightskip}{0pt plus 5cm}void Action\-::set\-Config (
+\begin{DoxyParamCaption}
+\item[{{\bf Configuration} $\ast$}]{a}
+\end{DoxyParamCaption}
+)}}\label{classAction_adc70d557ee3bd8653cbdb06dc16532c2}
+
+
+Change the action. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em a} & The action to do in the configuration space. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classAction_a357c36b42542755e9b2752412080b4dd}{\index{Action@{Action}!set\-Next\-State@{set\-Next\-State}}
+\index{set\-Next\-State@{set\-Next\-State}!Action@{Action}}
+\subsubsection[{set\-Next\-State}]{\setlength{\rightskip}{0pt plus 5cm}void Action\-::set\-Next\-State (
+\begin{DoxyParamCaption}
+\item[{{\bf State} $\ast$}]{s}
+\end{DoxyParamCaption}
+)}}\label{classAction_a357c36b42542755e9b2752412080b4dd}
+
+
+Set next state. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em s} & Pointer to the state reached for doing this action (from the parent state).\\
+\hline
+\mbox{\tt in}  & {\em S} & Pointer to the state reached for doing this action (from the parent state). \\
+\hline
+\end{DoxyParams}
+\hypertarget{classAction_a62c0e418aeb551df53a81d865b945274}{\index{Action@{Action}!set\-Reward@{set\-Reward}}
+\index{set\-Reward@{set\-Reward}!Action@{Action}}
+\subsubsection[{set\-Reward}]{\setlength{\rightskip}{0pt plus 5cm}void Action\-::set\-Reward (
+\begin{DoxyParamCaption}
+\item[{float}]{r}
+\end{DoxyParamCaption}
+)}}\label{classAction_a62c0e418aeb551df53a81d865b945274}
+
+
+Sets the reward value directly. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em r} & The value to set the reward to. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classAction_a23899eb8bebdca42593c247cabfaec81}{\index{Action@{Action}!update\-Reward@{update\-Reward}}
+\index{update\-Reward@{update\-Reward}!Action@{Action}}
+\subsubsection[{update\-Reward}]{\setlength{\rightskip}{0pt plus 5cm}void Action\-::update\-Reward (
+\begin{DoxyParamCaption}
+\item[{float}]{r}
+\end{DoxyParamCaption}
+)}}\label{classAction_a23899eb8bebdca42593c247cabfaec81}
+
+
+Updates the reward through an average. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em r} & The reward value to incorporate. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+rl-\/lib\-\_\-state.\-h\item 
+rl-\/lib\-\_\-state.\-cpp\end{DoxyCompactItemize}

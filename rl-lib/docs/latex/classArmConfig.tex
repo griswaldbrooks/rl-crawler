@@ -1,0 +1,122 @@
+\hypertarget{classArmConfig}{\section{Arm\-Config Class Reference}
+\label{classArmConfig}\index{Arm\-Config@{Arm\-Config}}
+}
+
+
+\hyperlink{classArm}{Arm} configuration class to hold joint variables used with the \hyperlink{classState}{State} class.  
+
+
+
+
+{\ttfamily \#include $<$crawler.\-h$>$}
+
+Inheritance diagram for Arm\-Config\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classArmConfig}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classArmConfig_a9c88c588472e0c18024d4a6c30f1f531}{do\-Comparison} (\hyperlink{classConfiguration}{Configuration} $\ast$c)
+\begin{DoxyCompactList}\small\item\em Accept a configuration to do a comparision on. \end{DoxyCompactList}\item 
+bool \hyperlink{classArmConfig_af97e33e4a0b4faaf611737e375e15e23}{Compare} (\hyperlink{classConfiguration}{Configuration} $\ast$c)
+\begin{DoxyCompactList}\small\item\em Do the comparison on the configuration. \end{DoxyCompactList}\item 
+bool \hyperlink{classArmConfig_a91931a29109e8b018d1c600c462fb95f}{Compare} (\hyperlink{classArmConfig}{Arm\-Config} $\ast$c)
+\begin{DoxyCompactList}\small\item\em Do the comparison on the arm configuration. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classArmConfig_a2fb3ed359d34f8a61707dc15a791f2fc}{float {\bfseries angle1}}\label{classArmConfig_a2fb3ed359d34f8a61707dc15a791f2fc}
+
+\item 
+float \hyperlink{classArmConfig_a8675cabacd6a5a75d9dd21696b14f645}{angle2}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classArm}{Arm} configuration class to hold joint variables used with the \hyperlink{classState}{State} class. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classArmConfig_af97e33e4a0b4faaf611737e375e15e23}{\index{Arm\-Config@{Arm\-Config}!Compare@{Compare}}
+\index{Compare@{Compare}!ArmConfig@{Arm\-Config}}
+\subsubsection[{Compare}]{\setlength{\rightskip}{0pt plus 5cm}bool Arm\-Config\-::\-Compare (
+\begin{DoxyParamCaption}
+\item[{{\bf Configuration} $\ast$}]{c}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classArmConfig_af97e33e4a0b4faaf611737e375e15e23}
+
+
+Do the comparison on the configuration. 
+
+Will return false as the abstract type cannot be compared to the derived type.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em c} & The \hyperlink{classConfiguration}{Configuration} to compare. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+If the configuration passed in is equal to this one. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classConfiguration_a82f926a9b9ea439862089f1d6c06b3e0}{Configuration}.
+
+\hypertarget{classArmConfig_a91931a29109e8b018d1c600c462fb95f}{\index{Arm\-Config@{Arm\-Config}!Compare@{Compare}}
+\index{Compare@{Compare}!ArmConfig@{Arm\-Config}}
+\subsubsection[{Compare}]{\setlength{\rightskip}{0pt plus 5cm}bool Arm\-Config\-::\-Compare (
+\begin{DoxyParamCaption}
+\item[{{\bf Arm\-Config} $\ast$}]{c}
+\end{DoxyParamCaption}
+)}}\label{classArmConfig_a91931a29109e8b018d1c600c462fb95f}
+
+
+Do the comparison on the arm configuration. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em c} & The \hyperlink{classArmConfig}{Arm\-Config} to compare. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+If the configuration passed in is equal to this one. 
+\end{DoxyReturn}
+\hypertarget{classArmConfig_a9c88c588472e0c18024d4a6c30f1f531}{\index{Arm\-Config@{Arm\-Config}!do\-Comparison@{do\-Comparison}}
+\index{do\-Comparison@{do\-Comparison}!ArmConfig@{Arm\-Config}}
+\subsubsection[{do\-Comparison}]{\setlength{\rightskip}{0pt plus 5cm}bool Arm\-Config\-::do\-Comparison (
+\begin{DoxyParamCaption}
+\item[{{\bf Configuration} $\ast$}]{c}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classArmConfig_a9c88c588472e0c18024d4a6c30f1f531}
+
+
+Accept a configuration to do a comparision on. 
+
+$\ast$$\ast$$\ast$ \hyperlink{classArmConfig}{Arm\-Config} Class $\ast$$\ast$$\ast$///
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em c} & The configuration to compare with this one. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+If the comparison was sucessful. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classConfiguration_a0bc4a5154c2836cc8976049810b35548}{Configuration}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classArmConfig_a8675cabacd6a5a75d9dd21696b14f645}{\index{Arm\-Config@{Arm\-Config}!angle2@{angle2}}
+\index{angle2@{angle2}!ArmConfig@{Arm\-Config}}
+\subsubsection[{angle2}]{\setlength{\rightskip}{0pt plus 5cm}float Arm\-Config\-::angle2}}\label{classArmConfig_a8675cabacd6a5a75d9dd21696b14f645}
+Angles for each of the joints. 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+crawler.\-h\item 
+crawler.\-cpp\end{DoxyCompactItemize}

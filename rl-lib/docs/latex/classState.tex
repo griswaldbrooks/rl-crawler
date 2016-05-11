@@ -1,0 +1,137 @@
+\hypertarget{classState}{\section{State Class Reference}
+\label{classState}\index{State@{State}}
+}
+
+
+\hyperlink{classState}{State} class.  
+
+
+
+
+{\ttfamily \#include $<$rl-\/lib\-\_\-state.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classState_ab91bb1dd5aa6260ab2a456581daf9ec2}{State} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\hyperlink{classState_acb29b7e6acb6ddac3bfe0629ef0e65b9}{State} (int n)
+\begin{DoxyCompactList}\small\item\em Constructor for known action set size. \end{DoxyCompactList}\item 
+\hyperlink{classState_a568030b37bd9340c190e2ca295f261d2}{State} (\hyperlink{classConfiguration}{Configuration} $\ast$state, \hyperlink{classConfigurationSet}{Configuration\-Set} $\ast$actions)
+\begin{DoxyCompactList}\small\item\em Constructor with \hyperlink{classConfiguration}{Configuration} state and \hyperlink{classAction}{Action} set. \end{DoxyCompactList}\item 
+\hypertarget{classState_afab438d92b90dc18d194dbd9c9c8bab3}{\hyperlink{classState_afab438d92b90dc18d194dbd9c9c8bab3}{$\sim$\-State} ()}\label{classState_afab438d92b90dc18d194dbd9c9c8bab3}
+
+\begin{DoxyCompactList}\small\item\em Default destructor. \end{DoxyCompactList}\item 
+void \hyperlink{classState_ab041e3de91fc35360d34c0e78c6d8543}{set\-Config} (\hyperlink{classConfiguration}{Configuration} $\ast$config)
+\begin{DoxyCompactList}\small\item\em Set the state configuration. \end{DoxyCompactList}\item 
+\hyperlink{classConfiguration}{Configuration} $\ast$ \hyperlink{classState_aa0472ec8cb28767154d4dd9eaac8a58d}{get\-Config} ()
+\begin{DoxyCompactList}\small\item\em Method to get system configuration for this state. \end{DoxyCompactList}\item 
+\hyperlink{classActionSet}{Action\-Set} $\ast$ \hyperlink{classState_a56deda372c59afd0d2b43e1211abffd4}{get\-Actions} ()
+\begin{DoxyCompactList}\small\item\em Get the \hyperlink{classActionSet}{Action\-Set} for this \hyperlink{classState}{State}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classState}{State} class. 
+
+This class is for creating states that can be used with different Reinforcement Learning Algorithms. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classState_ab91bb1dd5aa6260ab2a456581daf9ec2}{\index{State@{State}!State@{State}}
+\index{State@{State}!State@{State}}
+\subsubsection[{State}]{\setlength{\rightskip}{0pt plus 5cm}State\-::\-State (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classState_ab91bb1dd5aa6260ab2a456581daf9ec2}
+
+
+Default constructor. 
+
+$\ast$$\ast$$\ast$ \hyperlink{classState}{State} Class $\ast$$\ast$$\ast$/// \hypertarget{classState_acb29b7e6acb6ddac3bfe0629ef0e65b9}{\index{State@{State}!State@{State}}
+\index{State@{State}!State@{State}}
+\subsubsection[{State}]{\setlength{\rightskip}{0pt plus 5cm}State\-::\-State (
+\begin{DoxyParamCaption}
+\item[{int}]{n}
+\end{DoxyParamCaption}
+)}}\label{classState_acb29b7e6acb6ddac3bfe0629ef0e65b9}
+
+
+Constructor for known action set size. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em n} & The number of actions for the state. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classState_a568030b37bd9340c190e2ca295f261d2}{\index{State@{State}!State@{State}}
+\index{State@{State}!State@{State}}
+\subsubsection[{State}]{\setlength{\rightskip}{0pt plus 5cm}State\-::\-State (
+\begin{DoxyParamCaption}
+\item[{{\bf Configuration} $\ast$}]{state, }
+\item[{{\bf Configuration\-Set} $\ast$}]{actions}
+\end{DoxyParamCaption}
+)}}\label{classState_a568030b37bd9340c190e2ca295f261d2}
+
+
+Constructor with \hyperlink{classConfiguration}{Configuration} state and \hyperlink{classAction}{Action} set. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em state} & The \hyperlink{classConfiguration}{Configuration} for that state. \\
+\hline
+\mbox{\tt in}  & {\em actions} & The \hyperlink{classConfigurationSet}{Configuration\-Set} describing the actions in that state. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classState_a56deda372c59afd0d2b43e1211abffd4}{\index{State@{State}!get\-Actions@{get\-Actions}}
+\index{get\-Actions@{get\-Actions}!State@{State}}
+\subsubsection[{get\-Actions}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Action\-Set}$\ast$ State\-::get\-Actions (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classState_a56deda372c59afd0d2b43e1211abffd4}
+
+
+Get the \hyperlink{classActionSet}{Action\-Set} for this \hyperlink{classState}{State}. 
+
+\begin{DoxyReturn}{Returns}
+Pointer to the \hyperlink{classActionSet}{Action\-Set} that belongs to this \hyperlink{classState}{State}. 
+\end{DoxyReturn}
+\hypertarget{classState_aa0472ec8cb28767154d4dd9eaac8a58d}{\index{State@{State}!get\-Config@{get\-Config}}
+\index{get\-Config@{get\-Config}!State@{State}}
+\subsubsection[{get\-Config}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Configuration} $\ast$ State\-::get\-Config (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classState_aa0472ec8cb28767154d4dd9eaac8a58d}
+
+
+Method to get system configuration for this state. 
+
+\begin{DoxyReturn}{Returns}
+The \hyperlink{classConfiguration}{Configuration} of this state. 
+\end{DoxyReturn}
+\hypertarget{classState_ab041e3de91fc35360d34c0e78c6d8543}{\index{State@{State}!set\-Config@{set\-Config}}
+\index{set\-Config@{set\-Config}!State@{State}}
+\subsubsection[{set\-Config}]{\setlength{\rightskip}{0pt plus 5cm}void State\-::set\-Config (
+\begin{DoxyParamCaption}
+\item[{{\bf Configuration} $\ast$}]{config}
+\end{DoxyParamCaption}
+)}}\label{classState_ab041e3de91fc35360d34c0e78c6d8543}
+
+
+Set the state configuration. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em config} & \hyperlink{classConfiguration}{Configuration} to set the \hyperlink{classState}{State} to. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+rl-\/lib\-\_\-state.\-h\item 
+rl-\/lib\-\_\-state.\-cpp\end{DoxyCompactItemize}

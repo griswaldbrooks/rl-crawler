@@ -1,0 +1,144 @@
+\hypertarget{classStateSpace}{\section{State\-Space Class Reference}
+\label{classStateSpace}\index{State\-Space@{State\-Space}}
+}
+
+
+\hyperlink{classStateSpace}{State\-Space} class.  
+
+
+
+
+{\ttfamily \#include $<$rl-\/lib\-\_\-state.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classStateSpace_a9809804afcf94ebe347e19300d1a072e}{State\-Space} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\hyperlink{classStateSpace_a432d9ee4a72d3f6da5f0d09f2656a8ae}{State\-Space} (int n)
+\begin{DoxyCompactList}\small\item\em Constructor for known number of states. \end{DoxyCompactList}\item 
+void \hyperlink{classStateSpace_a261398949f30aa06ad9c5ed4b2426cb1}{push} (\hyperlink{classState}{State} $\ast$s)
+\begin{DoxyCompactList}\small\item\em Add \hyperlink{classState}{State} to the set. \end{DoxyCompactList}\item 
+\hyperlink{classState}{State} $\ast$ \hyperlink{classStateSpace_add66f2ade4b11919338ed101241f281a}{pop} ()
+\begin{DoxyCompactList}\small\item\em Remove \hyperlink{classState}{State} from the set. \end{DoxyCompactList}\item 
+bool \hyperlink{classStateSpace_a0a4d75d9f92d513220743e8ca4621d65}{is\-Empty} ()
+\begin{DoxyCompactList}\small\item\em Are there any objects in the set? \end{DoxyCompactList}\item 
+int \hyperlink{classStateSpace_a531782c8f2e1fdffcfbd4127b383477f}{size} ()
+\begin{DoxyCompactList}\small\item\em How many Configurations are in this set? \end{DoxyCompactList}\item 
+\hypertarget{classStateSpace_aa93bb010b217aa918ac2f68758d51247}{\hyperlink{classStateSpaceIter}{State\-Space\-Iter} $\ast$ \hyperlink{classStateSpace_aa93bb010b217aa918ac2f68758d51247}{create\-Iter} () const }\label{classStateSpace_aa93bb010b217aa918ac2f68758d51247}
+
+\begin{DoxyCompactList}\small\item\em Create iterator for set. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classStateSpace_a27384fd8b0bff77b9033cab49a33de0f}{class \hyperlink{classStateSpace_a27384fd8b0bff77b9033cab49a33de0f}{State\-Space\-Iter}}\label{classStateSpace_a27384fd8b0bff77b9033cab49a33de0f}
+
+\begin{DoxyCompactList}\small\item\em Declare iterator class as friend. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classStateSpace}{State\-Space} class. 
+
+This class is for \hyperlink{classState}{State} Spaces that can be used with different Reinforcement Learning Algorithms. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classStateSpace_a9809804afcf94ebe347e19300d1a072e}{\index{State\-Space@{State\-Space}!State\-Space@{State\-Space}}
+\index{State\-Space@{State\-Space}!StateSpace@{State\-Space}}
+\subsubsection[{State\-Space}]{\setlength{\rightskip}{0pt plus 5cm}State\-Space\-::\-State\-Space (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classStateSpace_a9809804afcf94ebe347e19300d1a072e}
+
+
+Default constructor. 
+
+$\ast$$\ast$$\ast$ \hyperlink{classStateSpace}{State\-Space} Class $\ast$$\ast$$\ast$/// \hypertarget{classStateSpace_a432d9ee4a72d3f6da5f0d09f2656a8ae}{\index{State\-Space@{State\-Space}!State\-Space@{State\-Space}}
+\index{State\-Space@{State\-Space}!StateSpace@{State\-Space}}
+\subsubsection[{State\-Space}]{\setlength{\rightskip}{0pt plus 5cm}State\-Space\-::\-State\-Space (
+\begin{DoxyParamCaption}
+\item[{int}]{n}
+\end{DoxyParamCaption}
+)}}\label{classStateSpace_a432d9ee4a72d3f6da5f0d09f2656a8ae}
+
+
+Constructor for known number of states. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em n} & Number of system states. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classStateSpace_a0a4d75d9f92d513220743e8ca4621d65}{\index{State\-Space@{State\-Space}!is\-Empty@{is\-Empty}}
+\index{is\-Empty@{is\-Empty}!StateSpace@{State\-Space}}
+\subsubsection[{is\-Empty}]{\setlength{\rightskip}{0pt plus 5cm}bool State\-Space\-::is\-Empty (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classStateSpace_a0a4d75d9f92d513220743e8ca4621d65}
+
+
+Are there any objects in the set? 
+
+\begin{DoxyReturn}{Returns}
+Returns true if there is anything in the set. 
+\end{DoxyReturn}
+\hypertarget{classStateSpace_add66f2ade4b11919338ed101241f281a}{\index{State\-Space@{State\-Space}!pop@{pop}}
+\index{pop@{pop}!StateSpace@{State\-Space}}
+\subsubsection[{pop}]{\setlength{\rightskip}{0pt plus 5cm}{\bf State} $\ast$ State\-Space\-::pop (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classStateSpace_add66f2ade4b11919338ed101241f281a}
+
+
+Remove \hyperlink{classState}{State} from the set. 
+
+\begin{DoxyReturn}{Returns}
+Pointer to the \hyperlink{classState}{State} object removed from the set. 
+\end{DoxyReturn}
+\hypertarget{classStateSpace_a261398949f30aa06ad9c5ed4b2426cb1}{\index{State\-Space@{State\-Space}!push@{push}}
+\index{push@{push}!StateSpace@{State\-Space}}
+\subsubsection[{push}]{\setlength{\rightskip}{0pt plus 5cm}void State\-Space\-::push (
+\begin{DoxyParamCaption}
+\item[{{\bf State} $\ast$}]{s}
+\end{DoxyParamCaption}
+)}}\label{classStateSpace_a261398949f30aa06ad9c5ed4b2426cb1}
+
+
+Add \hyperlink{classState}{State} to the set. 
+
+Add \hyperlink{classState}{State} to the space.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em s} & Pointer to the \hyperlink{classState}{State} to be added to the set. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classStateSpace_a531782c8f2e1fdffcfbd4127b383477f}{\index{State\-Space@{State\-Space}!size@{size}}
+\index{size@{size}!StateSpace@{State\-Space}}
+\subsubsection[{size}]{\setlength{\rightskip}{0pt plus 5cm}int State\-Space\-::size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classStateSpace_a531782c8f2e1fdffcfbd4127b383477f}
+
+
+How many Configurations are in this set? 
+
+Returns the size of the space.
+
+\begin{DoxyReturn}{Returns}
+Returns the number of Configurations in the set.
+
+The number of states in the space. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+rl-\/lib\-\_\-state.\-h\item 
+rl-\/lib\-\_\-state.\-cpp\end{DoxyCompactItemize}

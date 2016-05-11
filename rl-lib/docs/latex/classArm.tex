@@ -1,0 +1,152 @@
+\hypertarget{classArm}{\section{Arm Class Reference}
+\label{classArm}\index{Arm@{Arm}}
+}
+
+
+\hyperlink{classArm}{Arm} class for assigning angles to the crawler arm.  
+
+
+
+
+{\ttfamily \#include $<$crawler.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classArm_a920d0f828c6e76188827cf0c073963de}{Arm} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+void \hyperlink{classArm_a51bf7b1e2395c7437dd307ea689bd63e}{set\-Joint\-Angle} (int joint, float angle)
+\begin{DoxyCompactList}\small\item\em Sets joint angles for the arm class. \end{DoxyCompactList}\item 
+void \hyperlink{classArm_a3420d04cfe246e50b7d06dfc438184b0}{set\-Joint\-Config} (float angle1, float angle2)
+\begin{DoxyCompactList}\small\item\em Sets both joint angles for the arm class. \end{DoxyCompactList}\item 
+float \hyperlink{classArm_ac02320e3e99d6ff5c216f991b3540f5d}{get\-Joint\-Angle} (int joint)
+\begin{DoxyCompactList}\small\item\em Gets joint angles for the arm class. \end{DoxyCompactList}\item 
+float \hyperlink{classArm_a27305db80b3780b83162d63a19693d0b}{get\-Joint\-Angle\-Calibrated} (int joint)
+\begin{DoxyCompactList}\small\item\em Gets joint angles for the arm class to be sent to the servos. \end{DoxyCompactList}\item 
+int \hyperlink{classArm_a3be1d9132b03b8d8ea120271f699fd5a}{get\-Joint\-Pin} (int joint)
+\begin{DoxyCompactList}\small\item\em Gets the Arduino pin assignment for that joint. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classArm}{Arm} class for assigning angles to the crawler arm. 
+
+This class is for assigning arm values but itself does not command the hardware. The calibrated values must be taken from it and given to the servo driver. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classArm_a920d0f828c6e76188827cf0c073963de}{\index{Arm@{Arm}!Arm@{Arm}}
+\index{Arm@{Arm}!Arm@{Arm}}
+\subsubsection[{Arm}]{\setlength{\rightskip}{0pt plus 5cm}Arm\-::\-Arm (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classArm_a920d0f828c6e76188827cf0c073963de}
+
+
+Default constructor. 
+
+$\ast$$\ast$$\ast$ \hyperlink{classArm}{Arm} Class $\ast$$\ast$$\ast$/// 
+
+\subsection{Member Function Documentation}
+\hypertarget{classArm_ac02320e3e99d6ff5c216f991b3540f5d}{\index{Arm@{Arm}!get\-Joint\-Angle@{get\-Joint\-Angle}}
+\index{get\-Joint\-Angle@{get\-Joint\-Angle}!Arm@{Arm}}
+\subsubsection[{get\-Joint\-Angle}]{\setlength{\rightskip}{0pt plus 5cm}float Arm\-::get\-Joint\-Angle (
+\begin{DoxyParamCaption}
+\item[{int}]{joint}
+\end{DoxyParamCaption}
+)}}\label{classArm_ac02320e3e99d6ff5c216f991b3540f5d}
+
+
+Gets joint angles for the arm class. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em joint} & The joint to get the angle for. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The angle for the given joint in degrees. 
+\end{DoxyReturn}
+\hypertarget{classArm_a27305db80b3780b83162d63a19693d0b}{\index{Arm@{Arm}!get\-Joint\-Angle\-Calibrated@{get\-Joint\-Angle\-Calibrated}}
+\index{get\-Joint\-Angle\-Calibrated@{get\-Joint\-Angle\-Calibrated}!Arm@{Arm}}
+\subsubsection[{get\-Joint\-Angle\-Calibrated}]{\setlength{\rightskip}{0pt plus 5cm}float Arm\-::get\-Joint\-Angle\-Calibrated (
+\begin{DoxyParamCaption}
+\item[{int}]{joint}
+\end{DoxyParamCaption}
+)}}\label{classArm_a27305db80b3780b83162d63a19693d0b}
+
+
+Gets joint angles for the arm class to be sent to the servos. 
+
+Takes into account any calibration parameters needed for correct angle mapping.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em joint} & The joint to get the angle for. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The angle for the given joint in degrees. 
+\end{DoxyReturn}
+\hypertarget{classArm_a3be1d9132b03b8d8ea120271f699fd5a}{\index{Arm@{Arm}!get\-Joint\-Pin@{get\-Joint\-Pin}}
+\index{get\-Joint\-Pin@{get\-Joint\-Pin}!Arm@{Arm}}
+\subsubsection[{get\-Joint\-Pin}]{\setlength{\rightskip}{0pt plus 5cm}int Arm\-::get\-Joint\-Pin (
+\begin{DoxyParamCaption}
+\item[{int}]{joint}
+\end{DoxyParamCaption}
+)}}\label{classArm_a3be1d9132b03b8d8ea120271f699fd5a}
+
+
+Gets the Arduino pin assignment for that joint. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em joint} & The joint to get the pin number for. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The pin number for that joint. 
+\end{DoxyReturn}
+\hypertarget{classArm_a51bf7b1e2395c7437dd307ea689bd63e}{\index{Arm@{Arm}!set\-Joint\-Angle@{set\-Joint\-Angle}}
+\index{set\-Joint\-Angle@{set\-Joint\-Angle}!Arm@{Arm}}
+\subsubsection[{set\-Joint\-Angle}]{\setlength{\rightskip}{0pt plus 5cm}void Arm\-::set\-Joint\-Angle (
+\begin{DoxyParamCaption}
+\item[{int}]{joint, }
+\item[{float}]{angle}
+\end{DoxyParamCaption}
+)}}\label{classArm_a51bf7b1e2395c7437dd307ea689bd63e}
+
+
+Sets joint angles for the arm class. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em joint} & Which joint in the chain to be commanded. \\
+\hline
+\mbox{\tt in}  & {\em angle} & The angle to which the joint will be commanded. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classArm_a3420d04cfe246e50b7d06dfc438184b0}{\index{Arm@{Arm}!set\-Joint\-Config@{set\-Joint\-Config}}
+\index{set\-Joint\-Config@{set\-Joint\-Config}!Arm@{Arm}}
+\subsubsection[{set\-Joint\-Config}]{\setlength{\rightskip}{0pt plus 5cm}void Arm\-::set\-Joint\-Config (
+\begin{DoxyParamCaption}
+\item[{float}]{angle1, }
+\item[{float}]{angle2}
+\end{DoxyParamCaption}
+)}}\label{classArm_a3420d04cfe246e50b7d06dfc438184b0}
+
+
+Sets both joint angles for the arm class. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em angle1} & Angle of the first joint, J1. \\
+\hline
+\mbox{\tt in}  & {\em angle2} & Angle of the second joint, J2. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+crawler.\-h\item 
+crawler.\-cpp\end{DoxyCompactItemize}

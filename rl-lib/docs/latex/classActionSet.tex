@@ -1,0 +1,143 @@
+\hypertarget{classActionSet}{\section{Action\-Set Class Reference}
+\label{classActionSet}\index{Action\-Set@{Action\-Set}}
+}
+
+
+\hyperlink{classActionSet}{Action\-Set} class.  
+
+
+
+
+{\ttfamily \#include $<$rl-\/lib\-\_\-state.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classActionSet_af1a45dd53e14b66eabf1a4e77df51c81}{Action\-Set} ()
+\begin{DoxyCompactList}\small\item\em Default constructor for the set. \end{DoxyCompactList}\item 
+\hyperlink{classActionSet_a4b5f488670ee207dbb3aac3f92e83bd3}{Action\-Set} (int n)
+\begin{DoxyCompactList}\small\item\em Constructor for the set with known size. \end{DoxyCompactList}\item 
+\hypertarget{classActionSet_a95eb8d8a76dfdda76cf4cbc67c6e070b}{\hyperlink{classActionSet_a95eb8d8a76dfdda76cf4cbc67c6e070b}{$\sim$\-Action\-Set} ()}\label{classActionSet_a95eb8d8a76dfdda76cf4cbc67c6e070b}
+
+\begin{DoxyCompactList}\small\item\em Default destructor for the set. \end{DoxyCompactList}\item 
+void \hyperlink{classActionSet_a2283fd90299aa1b8390c5957164032b8}{push} (\hyperlink{classAction}{Action} a)
+\begin{DoxyCompactList}\small\item\em Add \hyperlink{classAction}{Action} to the set. \end{DoxyCompactList}\item 
+\hyperlink{classAction}{Action} \hyperlink{classActionSet_a079095c7b16385741f48c1f75bc225ba}{pop} ()
+\begin{DoxyCompactList}\small\item\em Remove \hyperlink{classAction}{Action} from the set. \end{DoxyCompactList}\item 
+bool \hyperlink{classActionSet_a76b75c1f8ce17b41f3868c3ef845daf6}{is\-Empty} ()
+\begin{DoxyCompactList}\small\item\em Are there any objects in the set? \end{DoxyCompactList}\item 
+int \hyperlink{classActionSet_aa41e9f5b446070bf5b57d9d314b3960c}{size} ()
+\begin{DoxyCompactList}\small\item\em How many Actions are in this set? \end{DoxyCompactList}\item 
+\hypertarget{classActionSet_aee6a3a79570dd883dafdd66285f2eb39}{\hyperlink{classActionSetIter}{Action\-Set\-Iter} $\ast$ \hyperlink{classActionSet_aee6a3a79570dd883dafdd66285f2eb39}{create\-Iter} () const }\label{classActionSet_aee6a3a79570dd883dafdd66285f2eb39}
+
+\begin{DoxyCompactList}\small\item\em Create iterator for set. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classActionSet_aadd7d34449f2080eeb1259cf3ce0c141}{class \hyperlink{classActionSet_aadd7d34449f2080eeb1259cf3ce0c141}{Action\-Set\-Iter}}\label{classActionSet_aadd7d34449f2080eeb1259cf3ce0c141}
+
+\begin{DoxyCompactList}\small\item\em Declare iterator class as friend. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classActionSet}{Action\-Set} class. 
+
+This is an aggregate class for containing a set of \hyperlink{classAction}{Action} objects. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classActionSet_af1a45dd53e14b66eabf1a4e77df51c81}{\index{Action\-Set@{Action\-Set}!Action\-Set@{Action\-Set}}
+\index{Action\-Set@{Action\-Set}!ActionSet@{Action\-Set}}
+\subsubsection[{Action\-Set}]{\setlength{\rightskip}{0pt plus 5cm}Action\-Set\-::\-Action\-Set (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classActionSet_af1a45dd53e14b66eabf1a4e77df51c81}
+
+
+Default constructor for the set. 
+
+$\ast$$\ast$$\ast$ \hyperlink{classActionSet}{Action\-Set} class. $\ast$$\ast$$\ast$///
+
+Default constructor for the set. \hypertarget{classActionSet_a4b5f488670ee207dbb3aac3f92e83bd3}{\index{Action\-Set@{Action\-Set}!Action\-Set@{Action\-Set}}
+\index{Action\-Set@{Action\-Set}!ActionSet@{Action\-Set}}
+\subsubsection[{Action\-Set}]{\setlength{\rightskip}{0pt plus 5cm}Action\-Set\-::\-Action\-Set (
+\begin{DoxyParamCaption}
+\item[{int}]{n}
+\end{DoxyParamCaption}
+)}}\label{classActionSet_a4b5f488670ee207dbb3aac3f92e83bd3}
+
+
+Constructor for the set with known size. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em n} & The number of actions in the set. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classActionSet_a76b75c1f8ce17b41f3868c3ef845daf6}{\index{Action\-Set@{Action\-Set}!is\-Empty@{is\-Empty}}
+\index{is\-Empty@{is\-Empty}!ActionSet@{Action\-Set}}
+\subsubsection[{is\-Empty}]{\setlength{\rightskip}{0pt plus 5cm}bool Action\-Set\-::is\-Empty (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classActionSet_a76b75c1f8ce17b41f3868c3ef845daf6}
+
+
+Are there any objects in the set? 
+
+\begin{DoxyReturn}{Returns}
+Returns true if there is anything in the set. 
+\end{DoxyReturn}
+\hypertarget{classActionSet_a079095c7b16385741f48c1f75bc225ba}{\index{Action\-Set@{Action\-Set}!pop@{pop}}
+\index{pop@{pop}!ActionSet@{Action\-Set}}
+\subsubsection[{pop}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Action} Action\-Set\-::pop (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classActionSet_a079095c7b16385741f48c1f75bc225ba}
+
+
+Remove \hyperlink{classAction}{Action} from the set. 
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{classAction}{Action} object removed from the set. 
+\end{DoxyReturn}
+\hypertarget{classActionSet_a2283fd90299aa1b8390c5957164032b8}{\index{Action\-Set@{Action\-Set}!push@{push}}
+\index{push@{push}!ActionSet@{Action\-Set}}
+\subsubsection[{push}]{\setlength{\rightskip}{0pt plus 5cm}void Action\-Set\-::push (
+\begin{DoxyParamCaption}
+\item[{{\bf Action}}]{a}
+\end{DoxyParamCaption}
+)}}\label{classActionSet_a2283fd90299aa1b8390c5957164032b8}
+
+
+Add \hyperlink{classAction}{Action} to the set. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em a} & \hyperlink{classAction}{Action} to be added to the set. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classActionSet_aa41e9f5b446070bf5b57d9d314b3960c}{\index{Action\-Set@{Action\-Set}!size@{size}}
+\index{size@{size}!ActionSet@{Action\-Set}}
+\subsubsection[{size}]{\setlength{\rightskip}{0pt plus 5cm}int Action\-Set\-::size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classActionSet_aa41e9f5b446070bf5b57d9d314b3960c}
+
+
+How many Actions are in this set? 
+
+\begin{DoxyReturn}{Returns}
+Returns the number of Actions in the set. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+rl-\/lib\-\_\-state.\-h\item 
+rl-\/lib\-\_\-state.\-cpp\end{DoxyCompactItemize}

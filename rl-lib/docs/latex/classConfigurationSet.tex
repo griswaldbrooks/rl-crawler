@@ -1,0 +1,137 @@
+\hypertarget{classConfigurationSet}{\section{Configuration\-Set Class Reference}
+\label{classConfigurationSet}\index{Configuration\-Set@{Configuration\-Set}}
+}
+
+
+\hyperlink{classConfigurationSet}{Configuration\-Set} class.  
+
+
+
+
+{\ttfamily \#include $<$rl-\/lib\-\_\-state.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classConfigurationSet_a999e0eafae43cc9eac9b2ece1a808d1c}{Configuration\-Set} ()
+\begin{DoxyCompactList}\small\item\em Default constructor for the set. \end{DoxyCompactList}\item 
+\hyperlink{classConfigurationSet_aa30585ab5b48d3aec5219d8ecf6decec}{Configuration\-Set} (int n)
+\begin{DoxyCompactList}\small\item\em Constructor for the set with known size. \end{DoxyCompactList}\item 
+void \hyperlink{classConfigurationSet_a964dd92bef46df4e2b6f8c93ed776e99}{push} (\hyperlink{classConfiguration}{Configuration} $\ast$c)
+\begin{DoxyCompactList}\small\item\em Add \hyperlink{classConfiguration}{Configuration} to the set. \end{DoxyCompactList}\item 
+\hyperlink{classConfiguration}{Configuration} $\ast$ \hyperlink{classConfigurationSet_a85f2cc23e93e3736edadce7a541b200c}{pop} ()
+\begin{DoxyCompactList}\small\item\em Remove \hyperlink{classConfiguration}{Configuration} from the set. \end{DoxyCompactList}\item 
+bool \hyperlink{classConfigurationSet_a31e520d14bff315040b43b0da7d050fe}{is\-Empty} ()
+\begin{DoxyCompactList}\small\item\em Are there any objects in the set? \end{DoxyCompactList}\item 
+int \hyperlink{classConfigurationSet_a0fdde488f125fc12bf8267c39d8bf9c2}{size} ()
+\begin{DoxyCompactList}\small\item\em How many Configurations are in this set? \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classConfigurationSet}{Configuration\-Set} class. 
+
+This is an aggregate class for containing a set of \hyperlink{classConfiguration}{Configuration} objects. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classConfigurationSet_a999e0eafae43cc9eac9b2ece1a808d1c}{\index{Configuration\-Set@{Configuration\-Set}!Configuration\-Set@{Configuration\-Set}}
+\index{Configuration\-Set@{Configuration\-Set}!ConfigurationSet@{Configuration\-Set}}
+\subsubsection[{Configuration\-Set}]{\setlength{\rightskip}{0pt plus 5cm}Configuration\-Set\-::\-Configuration\-Set (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classConfigurationSet_a999e0eafae43cc9eac9b2ece1a808d1c}
+
+
+Default constructor for the set. 
+
+$\ast$$\ast$$\ast$ \hyperlink{classConfigurationSet}{Configuration\-Set} $\ast$$\ast$$\ast$///
+
+Default constructor for the set. \hypertarget{classConfigurationSet_aa30585ab5b48d3aec5219d8ecf6decec}{\index{Configuration\-Set@{Configuration\-Set}!Configuration\-Set@{Configuration\-Set}}
+\index{Configuration\-Set@{Configuration\-Set}!ConfigurationSet@{Configuration\-Set}}
+\subsubsection[{Configuration\-Set}]{\setlength{\rightskip}{0pt plus 5cm}Configuration\-Set\-::\-Configuration\-Set (
+\begin{DoxyParamCaption}
+\item[{int}]{n}
+\end{DoxyParamCaption}
+)}}\label{classConfigurationSet_aa30585ab5b48d3aec5219d8ecf6decec}
+
+
+Constructor for the set with known size. 
+
+Constructor for the set of known size.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em n} & The number of configurations in the set. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classConfigurationSet_a31e520d14bff315040b43b0da7d050fe}{\index{Configuration\-Set@{Configuration\-Set}!is\-Empty@{is\-Empty}}
+\index{is\-Empty@{is\-Empty}!ConfigurationSet@{Configuration\-Set}}
+\subsubsection[{is\-Empty}]{\setlength{\rightskip}{0pt plus 5cm}bool Configuration\-Set\-::is\-Empty (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classConfigurationSet_a31e520d14bff315040b43b0da7d050fe}
+
+
+Are there any objects in the set? 
+
+\begin{DoxyReturn}{Returns}
+Returns true if there is anything in the set. 
+\end{DoxyReturn}
+\hypertarget{classConfigurationSet_a85f2cc23e93e3736edadce7a541b200c}{\index{Configuration\-Set@{Configuration\-Set}!pop@{pop}}
+\index{pop@{pop}!ConfigurationSet@{Configuration\-Set}}
+\subsubsection[{pop}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Configuration} $\ast$ Configuration\-Set\-::pop (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classConfigurationSet_a85f2cc23e93e3736edadce7a541b200c}
+
+
+Remove \hyperlink{classConfiguration}{Configuration} from the set. 
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{classConfiguration}{Configuration} object removed from the set.
+
+Pointer to the \hyperlink{classConfiguration}{Configuration} object removed from the set. 
+\end{DoxyReturn}
+\hypertarget{classConfigurationSet_a964dd92bef46df4e2b6f8c93ed776e99}{\index{Configuration\-Set@{Configuration\-Set}!push@{push}}
+\index{push@{push}!ConfigurationSet@{Configuration\-Set}}
+\subsubsection[{push}]{\setlength{\rightskip}{0pt plus 5cm}void Configuration\-Set\-::push (
+\begin{DoxyParamCaption}
+\item[{{\bf Configuration} $\ast$}]{c}
+\end{DoxyParamCaption}
+)}}\label{classConfigurationSet_a964dd92bef46df4e2b6f8c93ed776e99}
+
+
+Add \hyperlink{classConfiguration}{Configuration} to the set. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em c} & \hyperlink{classConfiguration}{Configuration} to be added to the set.\\
+\hline
+\mbox{\tt in}  & {\em c} & Pointer to the \hyperlink{classConfiguration}{Configuration} to be added to the set. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classConfigurationSet_a0fdde488f125fc12bf8267c39d8bf9c2}{\index{Configuration\-Set@{Configuration\-Set}!size@{size}}
+\index{size@{size}!ConfigurationSet@{Configuration\-Set}}
+\subsubsection[{size}]{\setlength{\rightskip}{0pt plus 5cm}int Configuration\-Set\-::size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classConfigurationSet_a0fdde488f125fc12bf8267c39d8bf9c2}
+
+
+How many Configurations are in this set? 
+
+\begin{DoxyReturn}{Returns}
+Returns the number of Configurations in the set. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+rl-\/lib\-\_\-state.\-h\item 
+rl-\/lib\-\_\-state.\-cpp\end{DoxyCompactItemize}

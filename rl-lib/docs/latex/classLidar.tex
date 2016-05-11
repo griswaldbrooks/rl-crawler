@@ -1,0 +1,100 @@
+\hypertarget{classLidar}{\section{Lidar Class Reference}
+\label{classLidar}\index{Lidar@{Lidar}}
+}
+
+
+\hyperlink{classLidar}{Lidar} class for reading distance values from \hyperlink{classLidar}{Lidar}.  
+
+
+
+
+{\ttfamily \#include $<$crawler.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classLidar_acc713b5eb35b95bee2ac4d5396b0fb5b}{Lidar} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\hypertarget{classLidar_af1a22e6510e774e015f97e90dc8342a5}{void \hyperlink{classLidar_af1a22e6510e774e015f97e90dc8342a5}{read\-Sensor} ()}\label{classLidar_af1a22e6510e774e015f97e90dc8342a5}
+
+\begin{DoxyCompactList}\small\item\em Grabs a distance reading from the \hyperlink{classLidar}{Lidar}. \end{DoxyCompactList}\item 
+void \hyperlink{classLidar_a5d067f7656748755ea72ac31a9232ef5}{read\-Sensor\-N\-Times} (int n)
+\begin{DoxyCompactList}\small\item\em Grabs N distance readings from the \hyperlink{classLidar}{Lidar} and saves their average. \end{DoxyCompactList}\item 
+float \hyperlink{classLidar_a1085539adddae19ee6c3ce70ae4d7481}{get\-Voltage} ()
+\begin{DoxyCompactList}\small\item\em Gets the voltage read from the most recent \hyperlink{classLidar}{Lidar} read. \end{DoxyCompactList}\item 
+float \hyperlink{classLidar_ab8bb078d9dcff6162ce924fc6d0625d8}{get\-Distance} ()
+\begin{DoxyCompactList}\small\item\em Gets the distance read from the most recent \hyperlink{classLidar}{Lidar} read. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classLidar}{Lidar} class for reading distance values from \hyperlink{classLidar}{Lidar}. 
+
+This class is for reading the S\-F10/\-A Laser Altimeter for getting distance measurements to an object. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classLidar_acc713b5eb35b95bee2ac4d5396b0fb5b}{\index{Lidar@{Lidar}!Lidar@{Lidar}}
+\index{Lidar@{Lidar}!Lidar@{Lidar}}
+\subsubsection[{Lidar}]{\setlength{\rightskip}{0pt plus 5cm}Lidar\-::\-Lidar (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classLidar_acc713b5eb35b95bee2ac4d5396b0fb5b}
+
+
+Default constructor. 
+
+$\ast$$\ast$$\ast$ \hyperlink{classLidar}{Lidar} Class $\ast$$\ast$$\ast$///
+
+Default constructor 
+
+\subsection{Member Function Documentation}
+\hypertarget{classLidar_ab8bb078d9dcff6162ce924fc6d0625d8}{\index{Lidar@{Lidar}!get\-Distance@{get\-Distance}}
+\index{get\-Distance@{get\-Distance}!Lidar@{Lidar}}
+\subsubsection[{get\-Distance}]{\setlength{\rightskip}{0pt plus 5cm}float Lidar\-::get\-Distance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classLidar_ab8bb078d9dcff6162ce924fc6d0625d8}
+
+
+Gets the distance read from the most recent \hyperlink{classLidar}{Lidar} read. 
+
+\begin{DoxyReturn}{Returns}
+The distance read from the \hyperlink{classLidar}{Lidar} in meters. 
+\end{DoxyReturn}
+\hypertarget{classLidar_a1085539adddae19ee6c3ce70ae4d7481}{\index{Lidar@{Lidar}!get\-Voltage@{get\-Voltage}}
+\index{get\-Voltage@{get\-Voltage}!Lidar@{Lidar}}
+\subsubsection[{get\-Voltage}]{\setlength{\rightskip}{0pt plus 5cm}float Lidar\-::get\-Voltage (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classLidar_a1085539adddae19ee6c3ce70ae4d7481}
+
+
+Gets the voltage read from the most recent \hyperlink{classLidar}{Lidar} read. 
+
+\begin{DoxyReturn}{Returns}
+The value the \hyperlink{classLidar}{Lidar} returned in volts. 
+\end{DoxyReturn}
+\hypertarget{classLidar_a5d067f7656748755ea72ac31a9232ef5}{\index{Lidar@{Lidar}!read\-Sensor\-N\-Times@{read\-Sensor\-N\-Times}}
+\index{read\-Sensor\-N\-Times@{read\-Sensor\-N\-Times}!Lidar@{Lidar}}
+\subsubsection[{read\-Sensor\-N\-Times}]{\setlength{\rightskip}{0pt plus 5cm}void Lidar\-::read\-Sensor\-N\-Times (
+\begin{DoxyParamCaption}
+\item[{int}]{n}
+\end{DoxyParamCaption}
+)}}\label{classLidar_a5d067f7656748755ea72ac31a9232ef5}
+
+
+Grabs N distance readings from the \hyperlink{classLidar}{Lidar} and saves their average. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em n} & The number of readings to take. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+crawler.\-h\item 
+crawler.\-cpp\end{DoxyCompactItemize}

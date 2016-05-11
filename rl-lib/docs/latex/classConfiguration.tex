@@ -1,0 +1,84 @@
+\hypertarget{classConfiguration}{\section{Configuration Class Reference}
+\label{classConfiguration}\index{Configuration@{Configuration}}
+}
+
+
+\hyperlink{classConfiguration}{Configuration} class.  
+
+
+
+
+{\ttfamily \#include $<$rl-\/lib\-\_\-state.\-h$>$}
+
+Inheritance diagram for Configuration\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classConfiguration}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \hyperlink{classConfiguration_a0bc4a5154c2836cc8976049810b35548}{do\-Comparison} (\hyperlink{classConfiguration}{Configuration} $\ast$c)=0
+\begin{DoxyCompactList}\small\item\em Accept a configuration to do a comparision on. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{classConfiguration_a82f926a9b9ea439862089f1d6c06b3e0}{Compare} (\hyperlink{classConfiguration}{Configuration} $\ast$c)=0
+\begin{DoxyCompactList}\small\item\em Do the comparison on the configuration. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classConfiguration}{Configuration} class. 
+
+This class is for creating system state or configurations that the system would actually be in. For example, for a arm, it might be a set of joint angles. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classConfiguration_a82f926a9b9ea439862089f1d6c06b3e0}{\index{Configuration@{Configuration}!Compare@{Compare}}
+\index{Compare@{Compare}!Configuration@{Configuration}}
+\subsubsection[{Compare}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Configuration\-::\-Compare (
+\begin{DoxyParamCaption}
+\item[{{\bf Configuration} $\ast$}]{c}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classConfiguration_a82f926a9b9ea439862089f1d6c06b3e0}
+
+
+Do the comparison on the configuration. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em c} & The configuration to compare. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+If the configuration passed in is equal to this one. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classActionConfig_adbf2b04b558792a6fcfef7a52d16411c}{Action\-Config}, and \hyperlink{classArmConfig_af97e33e4a0b4faaf611737e375e15e23}{Arm\-Config}.
+
+\hypertarget{classConfiguration_a0bc4a5154c2836cc8976049810b35548}{\index{Configuration@{Configuration}!do\-Comparison@{do\-Comparison}}
+\index{do\-Comparison@{do\-Comparison}!Configuration@{Configuration}}
+\subsubsection[{do\-Comparison}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Configuration\-::do\-Comparison (
+\begin{DoxyParamCaption}
+\item[{{\bf Configuration} $\ast$}]{c}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classConfiguration_a0bc4a5154c2836cc8976049810b35548}
+
+
+Accept a configuration to do a comparision on. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em c} & The configuration to compare with this one. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+If the comparison was sucessful. 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classActionConfig_a822bda3a3ae83a30d6e7d297ca80c451}{Action\-Config}, and \hyperlink{classArmConfig_a9c88c588472e0c18024d4a6c30f1f531}{Arm\-Config}.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+rl-\/lib\-\_\-state.\-h\end{DoxyCompactItemize}
